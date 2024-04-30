@@ -25,26 +25,29 @@ const WeatherBox = () => {
         setCity(data);
 
 
-        if (data.weather.icon === '01d' || data.weather.icon === '01n') {
+        if (data.weather[0].icon === '01d' || data.weather[0].icon === '01n') {
             setDisplayIcon(clear_icon)
         }
-        else if (data.weather.icon === '02d' || data.weather.icon === '02n') {
+        else if (data.weather[0].icon === '02d' || data.weather[0].icon === '02n') {
             setDisplayIcon(cloud_icon)
         }
-        else if (data.weather.icon === '03d' || data.weather.icon === '03n') {
+        else if (data.weather[0].icon === '03d' || data.weather[0].icon === '03n') {
             setDisplayIcon(drizzle_icon)
         }
-        else if (data.weather.icon === '04d' || data.weather.icon === '04n') {
+        else if (data.weather[0].icon === '04d' || data.weather[0].icon === '04n') {
             setDisplayIcon(drizzle_icon)
         }
-        else if (data.weather.icon === '09d' || data.weather.icon === '09n') {
+        else if (data.weather[0].icon === '09d' || data.weather[0].icon === '09n') {
             setDisplayIcon(rain_icon)
         }
-        else if (data.weather.icon === '10d' || data.weather.icon === '10n') {
+        else if (data.weather[0].icon === '10d' || data.weather[0].icon === '10n') {
             setDisplayIcon(rain_icon)
         }
-        else if (data.weather.icon === '13d' || data.weather.icon === '13n') {
+        else if (data.weather[0].icon === '13d' || data.weather[0].icon === '13n') {
             setDisplayIcon(snow_icon)
+        }
+        else if (data.weather[0].icon === '50d' || data.weather[0].icon === '50n') {
+            setDisplayIcon(rain_icon)
         }
         else {
             setDisplayIcon(clear_icon)
