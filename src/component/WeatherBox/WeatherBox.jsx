@@ -74,6 +74,10 @@ const WeatherBox = () => {
                         <img src={displayIcon} alt='Weather' />
                     </div>
                     <div className="temp">{city.main.temp}°c</div>
+                    <div className="temp-range">
+                        <div className='data'>High: {city.main.temp_max}°c</div>
+                        <div className='data'>Low: {city.main.temp_min}°c</div>
+                    </div>
                     <div className="location">{city.name}</div>
                     <div className="data-container">
                         <div className="element">

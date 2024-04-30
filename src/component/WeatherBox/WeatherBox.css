@@ -54,6 +54,22 @@
     font-weight: 500;
 }
 
+.temp-range {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+}
+
+.temp .data {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    
+}
+
 .location {
     display: flex;
     justify-content: center;
